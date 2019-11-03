@@ -1,9 +1,23 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Setting
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+
+  <ion-button (click)="getData()">
+    get Data
+  </ion-button>
+  <ion-button (click)="postData()">
+    Post Data
+  </ion-button>
+  <ion-button (click)="GetJsonData()">
+    Get Json Data
+  </ion-button>
+
+  <ion-list *ngFor="let item of lists"> {{item.title}}
+  </ion-list>
+</ion-content>

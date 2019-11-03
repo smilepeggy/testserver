@@ -1,9 +1,17 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      User Data
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content padding>
+<ion-button  fill="outline"  expand="block" [routerLink]="[ '/button']">Login</ion-button>
+<p>
+  Sending a POST Request Example
+</p>
+<ion-button ion-button (click)="postData()">Post Data</ion-button>
+<ion-button ion-button (click)="postData2()">Post Data2</ion-button>
+
+</ion-content>

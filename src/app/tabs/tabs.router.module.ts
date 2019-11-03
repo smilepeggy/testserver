@@ -34,6 +34,8 @@ const routes: Routes = [
           }
         ]
       },
+      { path: 'server-test', loadChildren: '../server-test/server-test.module#ServerTestPageModule' },
+
       {
         path: '',
         redirectTo: '/tabs/tab1',
